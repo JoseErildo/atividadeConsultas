@@ -1,0 +1,13 @@
+a. Valores nulos podem compreender o tratamento de dados e não trabalhar de maneira esperada.
+Em uma query que permeia a condição de incremar mais um valor à coluna em que se encontra null,
+o efeito não será o pretendido devido null não se tratar de valor inteiro ou numerico.
+O ideal será definir um valor default 0 ou not null à coluna.
+
+b. left join -  permite obter dados relacionados entre duas tabelas e também dados não relacionados encontrados na tabela 
+à esquerda da cláusula JOIN. Caso não existam dados relacionados entre as tabelas à esquerda 
+e a direita do JOIN, os valores resultantes de todas as colunas da lista de seleção da tabela à direita serão nulos.
+
+right join - obtém os mesmo conceito de dados relacionados de left join, porém retorna todos os dados encontrados na tabela 
+à direita de JOIN. Caso não existam dados associados entre as tabelas à esquerda e à direita de JOIN, serão retornados valores nulos.
+
+c. Full Outer Join - retorna todos os registros quando há uma correspondência nos registros da tabela esquerda (tabela1) ou direita (tabela2).
